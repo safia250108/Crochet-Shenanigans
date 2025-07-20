@@ -2,7 +2,7 @@
 
 Welcome to the official repository for the **Crochet Shenanigans** website — a multi-page, visually appealing, and user-friendly site dedicated to the art of crochet.
 
-🔗 **Live Site:** [Click here to visit](https://safia250108.github.io/Business-Website/)
+🔗 **Live Site:** [Click here to visit](https://safia250108.github.io/Crochet-Shenanigans/)
 
 ## 🌟 About
 
