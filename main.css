@@ -1,0 +1,200 @@
+
+/* Navigation bar container */
+.navbar {
+	display: flex;
+	justify-content: center;
+	background-color: #ffc0c7;
+}
+
+/* Navigation links */
+.navbar a {
+	color: black;
+	padding: 14px 20px;
+	text-decoration: none;
+	text-align: center;
+}
+
+/* Hover effect */
+.navbar a:hover {
+    background-color: LightCoral;
+}
+
+
+/*Index Page*/
+/*image and welcome section*/
+.part1 {
+  display: flex;
+  align-items: center;         /* Vertically center content */
+  justify-content: space-between;
+  padding: 20px 160px;
+  background-color: #d6b8e0;
+}
+
+.text-content{
+  max-width: 60%;
+  text-align: left;
+}
+
+.part1 img {
+  object-fit: cover;
+  border-radius: 100px;
+  border: 5px solid white;
+}
+
+/*image carousel*/
+.carousel{
+	padding: 50px 50px;
+}
+.decoration{
+	min-width: 300px;
+	height: 300px;
+	background-color: white;
+}
+
+h2{
+	padding: 30% 0;
+}
+
+.images-container{
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	overflow-x: auto;
+}
+
+
+.images-container a img{
+	width: 300px;
+	height: 300px;
+	object-fit: cover; 
+	border-radius: 100px;
+	border: 5px solid #ffc0c7;
+}
+
+/*when mouse points on image, changes background-colour*/
+.images-container a:hover{
+	background-color: LightCoral;
+	cursor: pointer;
+}
+
+
+/*font styles for all files*/
+h1, h2{
+  font-family: "Quicksand", sans-serif;
+}
+
+p{
+	font-family: "Lora", sans-serif;
+}
+
+/*Order form*/
+iframe{
+	margin: 8rem 0;
+}
+
+.h {/*container with the image and the buttons*/
+  display: flex;
+  align-items: center; /* Vertically center image and buttons */
+  justify-content: center; /* Optional: centers horizontally */
+  padding: 20px;
+  border: 3px solid black;
+  width: fit-content;
+  margin: 10px auto; /* Center the entire block horizontally */
+  gap: 20px; /* Space between buttons and image */
+  background-color: #f9f9f9; /* Optional background */
+  border-radius: 6px;
+}
+
+
+input {/*buttons*/
+  height: 100px;
+  width: 100px;
+  background-color: #d6b8e0;
+  border: 3px solid white;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+.h img {
+  border: 3px solid white;
+  width: 500px;
+  height: 500px;
+}
+
+
+#pagenum {
+  border: 2px solid #333;
+  padding: 6px 12px;
+  border-radius: 6px;
+  display: inline-block;
+  font-size: 18px;
+  font-family: "Quicksand", sans-serif;
+  background-color: #f8f8f8;
+  position: absolute;
+  top: 95%;
+  left: 60%;
+}
+
+.bottom{ /*Back button*/
+	font-size: 18px;
+	font-family: "Quicksand", sans-serif;
+	background-color: #d6b8e0;
+	align-items: center; 
+	justify-content: center; 
+	padding: 1% 30%;
+	border: 3px solid black;
+	width: fit-content;
+	margin: 1px auto; 
+	border-radius: 6px;
+	cursor: pointer;
+
+}
+
+.description{
+	justify-content: left; 
+	border: 3px solid black;
+	width: 61%;
+	padding: 1% 1%;
+	margin: 11px auto; 
+	border-radius: 6px;
+	background-color: #d6b8e0;
+}
+
+
+/*about page*/
+header /* background only gets applied to this element.*/
+{
+	min-height: 70vh; /* sets the smallest possible height and stops the element from being any smaller.*/
+	width: 100%;
+	background-image: url('all.jpg');
+	background-position: center; /* centers the background*/
+	background-size: cover; /*Scales the image to the smallest possible size to fill the container, in this case, the header element*/
+}
+
+.text-content2{
+	padding: 50px 200px;
+	background-color: #d6b8e0;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.about{
+	border: 5px solid white;
+	padding: 10px 10px;
+}
+
+/*Contact Title*/
+.contact{
+	margin-top: 20px;
+	padding: 20px 50px;
+	background-color: #d6b8e0;
+}
+
+/*Contact Info*/
+.insta{
+	display: flex;
+}
+
+.insta p{
+	padding: 0px 50px;
+}

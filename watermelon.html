@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Watermelon Slice Pattern</title>
+	<link rel="stylesheet" href="main.css">
+	<link rel="icon" type="image/jpg" href="icon.png">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand|Lora">
+	
+	<script>/*used for the images section*/
+		var which_image_loaded = 0;
+		NUMBER_OF_IMAGES = 6;
+		ImageNames = new Object();
+		ImageNames.length = NUMBER_OF_IMAGES - 1;
+		
+		/*adds all the images*/
+		for (counter = 0; counter < NUMBER_OF_IMAGES; counter++){
+			file_number = counter + 1;
+			filename = ("watermelon" + file_number + ".png");
+			ImageNames[counter] = filename;
+		}
+		
+		/*changes images*/
+		function changeImage(direction) {
+			which_image_loaded += direction;
+			if (which_image_loaded < 0)
+				which_image_loaded = NUMBER_OF_IMAGES - 1;
+			if (which_image_loaded == NUMBER_OF_IMAGES)
+				which_image_loaded = 0;
+			if (document.images)
+				document.myimage.src = ImageNames[which_image_loaded];
+		
+		/*Displays page number*/
+		document.getElementById("pagenum").textContent = (which_image_loaded + 1)+ "/" + NUMBER_OF_IMAGES;
+		}
+	</script>
+</head>
+
+<body>
+
+	<!-- navigation bar -->
+	<div class="navbar">
+		<a href="index.html" target="_self">Home</a>
+		<a href="about.html" target="_self">About Me</a>
+		<a href="order.html" target="_self">Order</a>
+	</div>
+
+
+	<!-- initial image, buttons and their function -->
+	<div class = "h">
+		<input type="button" value="<" onClick='changeImage(-1);'>
+		<img src="watermelon1.png" name="myimage"" style="width:500px; height:500px;">
+		<input type= "button" value=">" onClick='changeImage(1);'>
+	</div>
+
+	<!-- initial page number displayed -->
+	<div class="text" id="pagenum"> 1/6 </div>
+
+	<!-- Description of the pattern, including reference -->
+	<div class = "description"> 
+		<h3> Pattern Description </h3>
+		<p>🍉🔑 Sweet, small, and summer-ready! This crochet watermelon slice keychain is the cutest way to add a pop of fruity fun to your bag or keys. 🍃☀️ I followed this amazing tutorial on Youtube: https://youtu.be/BtNo8q7iyTk?si=CZgSDsNdqXJjlQmO. </p>
+	</div>
+	
+	<!-- Back button -->
+	<div class = "bottom"> <a  href="index.html" target="_self">Back</a> </div>
+</body>
+
+
